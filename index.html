@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <link rel="stylesheet" href="mediaqueries.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div id="contact-header" class="contact-header">
+      <div class="c1">
+        <img class="c1-img" src="./assets/svg/mail.svg" alt="" height="25">
+        <p><a href="">barber@gmail.com</a></p>
+      </div>
+      <div class="c1">
+        <img class="c1-img" src="./assets/svg/mobile.svg" alt="" height="25">
+        <p><a href="">(046)123-456</a></p>
+      </div>
+    </div>
+  <nav id="nav">
+    <div class="navbar">
+      <div class="nav-logo">BARBERS</div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Clients</a></li>
+          <li><a href="">Resources</a></li>
+          <li><a href="">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="nav-logo">BARBERS</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class=" menu-links">
+        <li class="menu"><a href="#about" onclick="toggleMenu()">HOME</a></li>
+        <li class="menu"><a href="#skills" onclick="toggleMenu()">ABOUT</a></li>
+        <li class="menu"><a href="#projects" onclick="toggleMenu()">SERVICES</a></li>
+        <li class="menu"><a href="#contact" onclick="toggleMenu()">CLIENTS</a></li>
+        <li class="menu"><a href="#contact" onclick="toggleMenu()">RESOURCES</a></li>
+        <li class="menu"><a href="#contact" onclick="toggleMenu()">CAREERS</a></li>
+      </div>
+
+  </nav>
+
+  <section id="hero-sec">
+    <div class="hero">
+      <div class="hero-container">
+      <h1 class="hero-title">Quality Barber Shop</h1>
+      <p class="hero-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis turpis at auctor fringilla. 
+        Etiam maximus diam eu arcu pharetra hendrerit.</p>
+
+        <div class="hero-btn">
+          <button class="BTN hero-learn-btn">Learn More</button>
+          <button class="BTN hero-contact-btn">Contact Us</button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+</div>
+  <script src="./script.js"></script>
+</body>
+</html>

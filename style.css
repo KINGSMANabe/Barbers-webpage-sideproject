@@ -1,0 +1,380 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:#fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 17rem;
+    min-height: fit-content;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color:white;
+}
+
+a, .btn{
+    transition: all 0.3s ease-out; 
+}
+
+li{
+    list-style: none;
+}
+
+.wrapper{
+    background-image: url('./assets/images/bg.jpg');
+    background-size: cover;
+    z-index: 0;
+    height: 100svh;
+}
+
+.contact-header{
+    height: 5vh;
+    padding: 0 10rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-header p a{
+    font-size: 20px;
+    color: #fff;
+}
+
+.c1{
+    display: flex;
+}
+
+.c1-img{
+    background-color: rgb(238, 184, 49);
+    margin-right: 10px;
+    border-radius: 13%;
+}
+
+/************Navbar*************/
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    background-color: rgb(255,255,255,0.1);   
+}
+
+.nav-logo{
+    font-size: 48px;
+    color: rgb(238, 184, 49);
+    letter-spacing: -5px;
+    font-weight: bold;
+}
+
+.nav-links{
+    font-size: 17px;
+    color: #fff;
+    font-weight: bold;
+    text-transform:uppercase
+
+}
+
+.nav-links > ul{
+    display: flex;
+    column-gap: 35px; 
+}
+
+.nav-links > ul a{
+   color: #fff;
+   
+}
+
+.nav-links > ul a:hover{
+    color: rgb(238, 184, 49);
+}
+
+/*Hamburger menu*/
+#hamburger-nav{
+    display: none;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: flex;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(238, 184, 49);
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(255,255,255);
+    border-radius: 2px;
+    width:100vw;
+    height: 100svh;
+    max-height: 0; 
+    transition: all 0.3s ease-out; 
+    top: 1px;
+    z-index: 90;
+}
+
+.menu-links a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: black;
+    transition: all 0.1s ease-out;
+}
+
+.menu-links a:hover{
+    color: rgb(238, 184, 49);
+}
+
+.menu{
+    width: 100svw;
+}
+
+
+.menu-links.open {
+    max-height: 100svh;
+}
+
+
+.hamburger-icon.open span:first-child {
+   transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+ }
+
+ .hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+ }
+
+ .hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+
+/************HERO section*************/
+
+#hero-sec{
+    position: relative;
+    height: 50svh;
+}
+
+.hero{
+    color: #fff;
+    padding-top: 10px;
+    display: flex;
+}
+
+.hero-container{
+    width: 650px;
+    height: 70svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+.hero-info{
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.hero-title{
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.hero-btn{
+    display: flex;
+    column-gap: 15px;
+    font-family: r;
+}
+.BTN{
+    width: 220px;
+    background: black;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    padding: 17px 50px;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.BTN:hover{
+    background: rgb(238, 184, 49, 0.6);
+    color: white;
+    border: 2px solid white;
+}
+
+.hero-contact-btn{
+    background: rgb(238, 184, 49, 0.6);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px){
+
+    section{
+        margin: 0 5%;
+        height: fit-content;
+    }
+
+    #contact-header{
+        display: none;
+    }
+
+    #nav{
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 12vh;
+        background-color: rgb(255,255,255,0.1);
+    }
+
+}
+
+
+@media screen and (max-width:1030px){
+
+    .wrapper{
+        background-image: url('./assets/images/bg2.jpg');
+        background-size: cover;
+        z-index: 0;
+        height: 100svh;
+    }
+
+  
+}
+
+
+@media screen and (max-width:600px){
+
+   .nav-logo{
+    font-size: 35px;
+}
+
+.hero-container{
+    align-items: center;
+    text-align: center;
+}
+
+.hero-title{
+    font-size: 60px;
+}
+
+.hero-info{
+    text-align: justify;
+    width: auto;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.hero-btn{
+    flex-direction: column;
+    row-gap: 15px;
+}
+}
+
+@media screen and (max-width:435px){
+
+
+    .hero-container{
+       margin-top: 40px;
+    }
+
+
+  
+    .hero-title{
+        font-size: 60px;
+    }
+    
+}
+    @media screen and (max-width:300px){
+
+        .hero-container{
+            margin-top: 30px;
+       
+    
+    
+        }
+
+    
+        .hero-title{
+            font-size: 60px;
+        }
+
+
+
+    
+  
+}
