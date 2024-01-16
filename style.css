@@ -321,6 +321,7 @@ li{
 /************SERVICES section*************/
 #services{
     position: relative;
+    padding-bottom: 30px;
 }
 
 .services-p, .services-title{
