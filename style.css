@@ -7,7 +7,7 @@ html{
 }
 
 body{
-    background-color:#fff;
+    background-color:whitesmoke;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -23,6 +23,7 @@ div{
 section{
     padding-top: 4vh;
     height: 96vh;
+    height: 96svh;
     margin: 0 17rem;
     min-height: fit-content;
 }
@@ -273,25 +274,24 @@ li{
 /************ABOUT-US section*************/
 #about-us{
     position: relative;
-    height: 60svh;
 }
 
 .about-us{
     display: flex;
     gap: 5rem;
-    padding: 60px 0 20px 0;
+    padding: 60px 0 10px 0;
     color: #858484;
 }
 
 .section-subtitle-p{
     font-size: 18px;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .section-title-h1{
     font-size: 43px;
-    color: rgb(238, 184, 49);
+    color: rgb(238, 184, 49); 
     line-height: 1;
     margin: 10px 0 10px 0;
     letter-spacing: 1px;
@@ -314,6 +314,77 @@ li{
 .about-us-2nd-cont{
     display: flex;
     align-items: center;
+    
+}
+
+
+/************SERVICES section*************/
+#services{
+    position: relative;
+}
+
+.services-p, .services-title{
+    text-align: center;
+} 
+
+.services-p{
+    color: #858484;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+
+.services-cont{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 30px;
+
+}
+
+.services-cont-box{
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: 1px solid rgb(240, 235, 235);
+    box-shadow: 15px 15px 25px rgba(2, 28, 53, 0.05);
+    cursor: pointer;
+    margin-top: 30px;
+    overflow: hidden;
+    
+}
+
+.services-cont-box:hover{
+    transform: scale(1.02);
+    
+}
+
+.services-cont-box > img{
+   width: 100%;
+}
+
+.services-infobox{
+    padding: 10px;
+}
+
+.services-infobox > h4{
+  font-size: 18px;
+  color: rgb(238, 184, 49); 
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.serv-p {
+    text-align: center;
+    letter-spacing: 1px;
+    color: #858484;
+    font-weight: 300;
+}
+
+.readmore-btn{
+    margin-top: 20px;
 }
 
 
@@ -321,10 +392,8 @@ li{
 
 
 
-
-
 /************MEDIA QUERIES section*************/
-@media screen and (max-width:1200px){
+@media screen and (max-width:1285px){
 
     section{
         margin: 0 5%;
@@ -347,10 +416,6 @@ li{
         background-color: rgb(255,255,255,0.1);
     }
 
-    #about-us{
-        height: 100svh;
-    }
-
     .about-us{
         flex-direction: column;
         row-gap: 2rem;
@@ -362,9 +427,9 @@ li{
         align-items: center; 
     }
 
-   
-    
-
+    .services-cont{
+        grid-template-columns:1fr 1fr; 
+    }
 }
 
 
@@ -414,19 +479,19 @@ li{
     height: 300px;
 }
 
-
+.services-cont{
+    grid-template-columns:1fr; 
+    gap: 1px;
+}
 
 }
 
 @media screen and (max-width:435px){
 
-
     .hero-container{
        margin-top: 30px;
     }
 
-
-  
     .hero-title{
         font-size: 50px;
     }
@@ -434,6 +499,10 @@ li{
     .section-title-h1{
         font-size: 40px;
         margin: 10px 0 15px 0;
+    }
+
+    #about-us{
+        margin-bottom: 50px;
     }
 
     .about-p{
@@ -450,8 +519,14 @@ li{
     .about-us-2nd-cont img{
         height: 250px;
     }
+
+    .services-infobox > p{
+        text-align: justify;
+    
+    }
     
 }
+
     @media screen and (max-width:300px){
 
         .hero-container{
@@ -463,12 +538,18 @@ li{
             font-size: 45px;
         }
 
+        .section-subtitle-p{
+            font-size: 15px;
+
+        }
+
+        .section-title-h1{
+            font-size: 35px;
+
+        }
+
         .about-us-2nd-cont img{
             height: 180px;
         }
 
-
-
-    
-  
 }
